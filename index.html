@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vitrine Digital cria sites e lojas online para pequenos negócios locais, com pagamento flexível.">
+  <title>Vitrine Digital | Seu negócio na internet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a href="#topo" class="logo" aria-label="Vitrine Digital, início">
+        <span class="logo__mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        </span>
+        <span class="logo__text">Vitrine Digital</span>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+        <ul class="nav__list" id="nav-menu">
+          <li><a href="#planos" class="nav__link">Planos</a></li>
+          <li><a href="#como-funciona" class="nav__link">Como funciona</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#contato" class="nav__link nav__link--cta">Quero meu site</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="label-sm hero__eyebrow">Presença digital para negócios locais</p>
+          <h1 id="hero-title" class="display hero__title">Seu negócio na internet sem pagar caro por isso</h1>
+          <p class="body-md hero__subtitle">Pague uma entrada singela e combinamos o resto em troca de produtos e serviços.</p>
+          <div class="hero__actions">
+            <a href="#contato" class="btn btn--primary btn--lg">Quero meu site</a>
+            <a href="#" class="btn btn--whatsapp btn--lg" data-whatsapp data-message="Olá! Quero saber mais sobre os sites da Vitrine Digital.">Falar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos e Investimento -->
+    <section class="section section--alt" id="planos" aria-labelledby="planos-title">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <p class="label-sm section__eyebrow">Investimento</p>
+          <h2 id="planos-title" class="headline-lg">Planos e Investimento</h2>
+          <p class="body-md section__desc">Escolhe o plano que combina com você e paga do jeito que der.</p>
+        </header>
+
+        <div class="pricing-grid">
+          <!-- Essencial -->
+          <article class="pricing-card card">
+            <div class="pricing-card__header">
+              <h3 class="title-md">Essencial</h3>
+              <p class="pricing-card__price"><span class="pricing-card__from">A partir de</span> <span class="metric">R$ 800</span></p>
+              <p class="body-sm">Para quem quer dar o primeiro passo na internet.</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Site institucional (1 a 3 páginas)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Layout profissional
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Botão de WhatsApp
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Entrega rápida
+              </li>
+            </ul>
+            <div class="pricing-card__conditions">
+              <p class="body-sm"><strong>Pagamento híbrido disponível</strong></p>
+              <p class="body-sm">Entrada mínima de R$ 300 em dinheiro</p>
+            </div>
+          </article>
+
+          <!-- Profissional -->
+          <article class="pricing-card card pricing-card--featured">
+            <span class="pricing-card__badge">Recomendado</span>
+            <div class="pricing-card__header">
+              <h3 class="title-md">Profissional</h3>
+              <p class="pricing-card__price"><span class="pricing-card__from">A partir de</span> <span class="metric">R$ 1.500</span></p>
+              <p class="body-sm">Para quem quer crescer e aparecer mais online.</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Até 6 páginas
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Identidade visual básica
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                SEO inicial
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Painel administrativo
+              </li>
+            </ul>
+            <div class="pricing-card__conditions">
+              <p class="body-sm"><strong>Pagamento híbrido disponível</strong></p>
+              <p class="body-sm">40% a 60% em dinheiro</p>
+            </div>
+          </article>
+
+          <!-- Negócio Online -->
+          <article class="pricing-card card">
+            <div class="pricing-card__header">
+              <h3 class="title-md">Negócio Online</h3>
+              <p class="pricing-card__price"><span class="pricing-card__from">A partir de</span> <span class="metric">R$ 2.500</span></p>
+              <p class="body-sm">Para quem quer vender produto pela internet.</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Loja virtual
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Carrinho e checkout
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Integração com WhatsApp
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Treinamento
+              </li>
+            </ul>
+            <div class="pricing-card__conditions">
+              <p class="body-sm"><strong>Pagamento híbrido sob análise</strong></p>
+              <p class="body-sm">Mínimo de 60% em dinheiro</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Pagamento Flexível -->
+        <div class="pricing-flexible card card--elevated">
+          <div class="pricing-flexible__header">
+            <div class="pricing-flexible__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+            </div>
+            <h3 class="headline-md">Pagamento Flexível</h3>
+          </div>
+          <p class="body-md">Nem sempre dá para pagar tudo em dinheiro, e tudo bem. Parte do valor pode ser em produto ou serviço do seu negócio, desde que faça sentido para os dois lados.</p>
+          <ul class="pricing-flexible__examples">
+            <li class="pricing-flexible__example">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/></svg>
+              <span><strong>Padarias:</strong> produtos semanais</span>
+            </li>
+            <li class="pricing-flexible__example">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              <span><strong>Oficinas:</strong> serviços automotivos</span>
+            </li>
+            <li class="pricing-flexible__example">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <span><strong>Lojas:</strong> produtos selecionados</span>
+            </li>
+          </ul>
+          <p class="pricing-flexible__note body-sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            Uma parte sempre entra em dinheiro, para a gente conseguir colocar seu site no ar.
+          </p>
+        </div>
+
+        <!-- Manutenção -->
+        <article class="maintenance-card card">
+          <div class="maintenance-card__header">
+            <div class="maintenance-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div>
+              <h3 class="title-md">Manutenção e Suporte</h3>
+              <p class="body-sm">Depois que o site fica pronto, você pode contratar suporte para manter tudo em dia.</p>
+            </div>
+          </div>
+          <ul class="maintenance-card__features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Pequenas alterações
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Suporte técnico
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Backup
+            </li>
+          </ul>
+          <div class="maintenance-card__pricing">
+            <p class="maintenance-card__price"><span class="label-sm">A partir de</span> <span class="metric">R$ 50</span><span class="maintenance-card__period">/mês</span></p>
+            <p class="body-sm maintenance-card__note">Dá para negociar de forma flexível também</p>
+          </div>
+        </article>
+
+        <!-- CTA Planos -->
+        <div class="pricing-cta">
+          <p class="headline-md pricing-cta__text">Não sabe qual plano escolher? A gente te ajuda.</p>
+          <div class="pricing-cta__actions">
+            <a href="#" class="btn btn--whatsapp btn--lg" data-whatsapp data-message="Olá! Gostaria de entender qual plano da Vitrine Digital faz mais sentido para o meu negócio.">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              Falar no WhatsApp
+            </a>
+            <a href="#contato" class="btn btn--primary btn--lg">Solicitar proposta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="section" id="como-funciona" aria-labelledby="como-funciona-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="label-sm section__eyebrow">Processo</p>
+          <h2 id="como-funciona-title" class="headline-lg">Como funciona</h2>
+          <p class="body-md section__desc">Do primeiro contato ao site no ar, sem enrolação. A gente te acompanha em cada passo.</p>
+        </header>
+        <ol class="steps">
+          <li class="step card">
+            <span class="step__number mono-sm">01</span>
+            <div class="step__body">
+              <h3 class="title-md">Conversa inicial</h3>
+              <p class="body-sm">Conversamos sobre seu negócio, o que você precisa e o que consegue pagar hoje, inclusive com produto ou serviço.</p>
+            </div>
+          </li>
+          <li class="step card">
+            <span class="step__number mono-sm">02</span>
+            <div class="step__body">
+              <h3 class="title-md">Proposta sob medida</h3>
+              <p class="body-sm">Montamos uma proposta clara, com prazo e forma de pagamento que caiba no seu bolso.</p>
+            </div>
+          </li>
+          <li class="step card">
+            <span class="step__number mono-sm">03</span>
+            <div class="step__body">
+              <h3 class="title-md">Criação do site</h3>
+              <p class="body-sm">Criamos o layout e o conteúdo. Você vê tudo e aprova antes de ir pro ar.</p>
+            </div>
+          </li>
+          <li class="step card">
+            <span class="step__number mono-sm">04</span>
+            <div class="step__body">
+              <h3 class="title-md">Publicação e treinamento</h3>
+              <p class="body-sm">Publicamos o site e te mostramos como atualizar tudo pelo painel, sem complicação.</p>
+            </div>
+          </li>
+          <li class="step card">
+            <span class="step__number mono-sm">05</span>
+            <div class="step__body">
+              <h3 class="title-md">Suporte contínuo</h3>
+              <p class="body-sm">Seguimos por perto para ajustes, dúvidas e melhorias conforme seu negócio cresce.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- O que fazemos -->
+    <section class="section" id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="label-sm section__eyebrow">Serviços</p>
+          <h2 id="servicos-title" class="headline-lg">O que fazemos</h2>
+          <p class="body-md section__desc">Sites práticos para quem quer resultado, não dor de cabeça.</p>
+        </header>
+        <div class="services-grid">
+          <article class="service-card card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </div>
+            <h3 class="title-md">Sites institucionais</h3>
+            <p class="body-sm">Endereço, horários, serviços e contato num lugar só. Passa confiança pro cliente.</p>
+          </article>
+          <article class="service-card card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            </div>
+            <h3 class="title-md">E-commerce simples</h3>
+            <p class="body-sm">Venda online com catálogo e carrinho. Perfeito para loja e mercadinho de bairro.</p>
+          </article>
+          <article class="service-card card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+            </div>
+            <h3 class="title-md">Landing pages</h3>
+            <p class="body-sm">Páginas focadas em vender ou divulgar uma promoção específica.</p>
+          </article>
+          <article class="service-card card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+            </div>
+            <h3 class="title-md">Cardápios digitais</h3>
+            <p class="body-sm">Cardápio online que você atualiza quando quiser, com pedido direto no WhatsApp.</p>
+          </article>
+          <article class="service-card card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <h3 class="title-md">Portfólios</h3>
+            <p class="body-sm">Mostra seu trabalho de um jeito bonito e profissional. Ideal para quem presta serviço.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Exemplos de uso -->
+    <section class="section section--alt" id="exemplos" aria-labelledby="exemplos-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="label-sm section__eyebrow">Para quem é</p>
+          <h2 id="exemplos-title" class="headline-lg">Exemplos de uso</h2>
+          <p class="body-md section__desc">Atendemos negócio de bairro que quer ser encontrado e vender pela internet.</p>
+        </header>
+        <div class="business-grid">
+          <article class="business-card card">
+            <span class="business-card__emoji" aria-hidden="true">🥖</span>
+            <h3 class="title-md">Padarias e confeitarias</h3>
+            <p class="body-sm">Cardápio digital, encomendas e horário de funcionamento sempre atualizados.</p>
+          </article>
+          <article class="business-card card">
+            <span class="business-card__emoji" aria-hidden="true">🔧</span>
+            <h3 class="title-md">Oficinas e assistências</h3>
+            <p class="body-sm">Lista de serviços, agendamento e localização para clientes da região.</p>
+          </article>
+          <article class="business-card card">
+            <span class="business-card__emoji" aria-hidden="true">👗</span>
+            <h3 class="title-md">Lojas de roupa</h3>
+            <p class="body-sm">Vitrine online com catálogo, tamanhos e link direto para WhatsApp.</p>
+          </article>
+          <article class="business-card card">
+            <span class="business-card__emoji" aria-hidden="true">🛒</span>
+            <h3 class="title-md">Mercados e mercearias</h3>
+            <p class="body-sm">Lista de produtos, promoções da semana e pedidos para retirada ou entrega.</p>
+          </article>
+          <article class="business-card card">
+            <span class="business-card__emoji" aria-hidden="true">💇</span>
+            <h3 class="title-md">Salões e barbearias</h3>
+            <p class="body-sm">Portfólio de trabalhos, tabela de preços e botão de agendamento.</p>
+          </article>
+          <article class="business-card card">
+            <span class="business-card__emoji" aria-hidden="true">🏥</span>
+            <h3 class="title-md">Clínicas e consultórios</h3>
+            <p class="body-sm">Informações profissionais, convênios aceitos e canal de contato direto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gestão simples -->
+    <section class="section" id="gestao" aria-labelledby="gestao-title">
+      <div class="container">
+        <div class="admin-grid">
+          <div class="admin-grid__content">
+            <p class="label-sm section__eyebrow">Autonomia</p>
+            <h2 id="gestao-title" class="headline-lg">Gestão simples, no seu ritmo</h2>
+            <p class="body-md">Todo site vem com um painel fácil de usar. Você não precisa ser de TI para mudar preço, foto, horário ou promoção.</p>
+            <ul class="admin-features">
+              <li class="admin-features__item card">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 7h.01"/><path d="M17 7h.01"/><path d="M7 12h.01"/><path d="M17 12h.01"/><path d="M7 17h.01"/><path d="M17 17h.01"/></svg>
+                <div>
+                  <h3 class="title-md">Interface clara</h3>
+                  <p class="body-sm">Tudo organizado e simples de entender, até para quem nunca mexeu em site.</p>
+                </div>
+              </li>
+              <li class="admin-features__item card">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
+                <div>
+                  <h3 class="title-md">Edição rápida</h3>
+                  <p class="body-sm">Altere textos, imagens e produtos em minutos, direto do celular ou computador.</p>
+                </div>
+              </li>
+              <li class="admin-features__item card">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                <div>
+                  <h3 class="title-md">Suporte quando precisar</h3>
+                  <p class="body-sm">Travou em alguma coisa ou precisa de algo maior? Chama no WhatsApp.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / Contato -->
+    <section class="section section--cta" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-grid__intro">
+            <p class="label-sm section__eyebrow">Contato</p>
+            <h2 id="contato-title" class="headline-lg">Pronto para colocar seu negócio online?</h2>
+            <p class="body-md">Preenche o formulário ou manda mensagem no WhatsApp. Respondemos em até 1 dia útil.</p>
+            <a href="#" class="btn btn--whatsapp" data-whatsapp data-message="Olá! Gostaria de solicitar um orçamento para meu site.">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              Falar no WhatsApp
+            </a>
+          </div>
+          <form class="contact-form card card--elevated" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="nome" class="label-sm">Seu nome</label>
+              <input type="text" id="nome" name="nome" class="input-field" placeholder="Como podemos te chamar?" required autocomplete="name">
+              <span class="form-error" id="nome-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="negocio" class="label-sm">Nome do negócio</label>
+              <input type="text" id="negocio" name="negocio" class="input-field" placeholder="Ex: Padaria do João" required>
+              <span class="form-error" id="negocio-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="whatsapp" class="label-sm">WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" class="input-field" placeholder="(11) 99999-9999" required autocomplete="tel">
+              <span class="form-error" id="whatsapp-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Enviar solicitação</button>
+            <p class="body-sm form-note">Ao enviar, a gente te leva pro WhatsApp com a mensagem já montada.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__text">Vitrine Digital</span>
+        <p class="body-sm footer__tagline">Sites e presença digital para negócios locais.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <a href="#planos" class="footer__link">Planos</a>
+        <a href="#como-funciona" class="footer__link">Como funciona</a>
+        <a href="#servicos" class="footer__link">Serviços</a>
+        <a href="#contato" class="footer__link">Contato</a>
+      </nav>
+      <p class="body-sm footer__copy">&copy; <span id="year"></span> Vitrine Digital. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

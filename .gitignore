@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
+
+# Ambiente local
+.env
+.env.*
+!.env.example
+
+# Logs e cache
+*.log
+npm-debug.log*
