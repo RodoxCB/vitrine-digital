@@ -12,3 +12,6 @@ Thumbs.db
 # Logs e cache
 *.log
 npm-debug.log*
+
+# Dependências locais
+node_modules/

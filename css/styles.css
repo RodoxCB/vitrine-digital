@@ -170,6 +170,8 @@ input {
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--color-on-surface-faint);
+  text-wrap: balance;
+  hyphens: none;
 }
 
 .mono-sm {
@@ -179,6 +181,28 @@ input {
   line-height: 1.4;
 }
 
+.display,
+.headline-lg,
+.headline-md,
+.title-md,
+.section__header h2,
+.pricing-cta__text {
+  text-wrap: balance;
+}
+
+.body-md,
+.body-sm,
+.hero__subtitle,
+.section__desc,
+.pricing-card__features li,
+.step__body p,
+.pricing-flexible > .body-md,
+.pricing-flexible__lead {
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+
+
 .metric {
   font-family: var(--font-mono);
   font-size: clamp(1.25rem, 3vw, 1.75rem);
@@ -186,6 +210,7 @@ input {
   letter-spacing: -0.02em;
   line-height: 1;
   color: var(--color-on-surface);
+  white-space: nowrap;
 }
 
 /* =============================================
@@ -227,6 +252,7 @@ input {
 
 .section__header--center .section__desc {
   margin-inline: auto;
+  max-width: 38ch;
 }
 
 .section__eyebrow {
@@ -493,10 +519,24 @@ input {
 .hero__subtitle {
   font-size: 1.125rem;
   font-weight: 500;
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--color-warning);
-  max-width: 480px;
+  max-width: 34ch;
   margin-bottom: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .hero__subtitle {
+    max-width: 42ch;
+    font-size: 1.1875rem;
+  }
+}
+
+@media (max-width: 379px) {
+  .hero__eyebrow {
+    letter-spacing: 0.05em;
+    font-size: 0.6875rem;
+  }
 }
 
 .hero__actions {
@@ -748,9 +788,15 @@ input {
 
 @media (min-width: 768px) {
   .pricing-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: stretch;
     gap: var(--space-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .pricing-card--featured {
@@ -786,6 +832,10 @@ input {
 }
 
 .pricing-flexible > .body-md {
+  margin-bottom: var(--space-md);
+}
+
+.pricing-flexible__lead {
   margin-bottom: var(--space-lg);
 }
 
@@ -889,9 +939,17 @@ input {
 
 .maintenance-card__price {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: var(--space-sm);
   margin-bottom: var(--space-xs);
+}
+
+.maintenance-card__amount {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+  white-space: nowrap;
 }
 
 .maintenance-card__price .label-sm {
@@ -919,6 +977,14 @@ input {
 
 .pricing-cta__text {
   margin-bottom: var(--space-lg);
+  max-width: 22ch;
+  margin-inline: auto;
+}
+
+@media (min-width: 600px) {
+  .pricing-cta__text {
+    max-width: 28ch;
+  }
 }
 
 .pricing-cta__actions {
