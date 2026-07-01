@@ -10,16 +10,20 @@ Site institucional da Vitrine Digital — sites e presença online para pequenos
 
 ## Branches e deploy
 
-| Branch    | Ambiente   | Comportamento                          |
-|-----------|------------|----------------------------------------|
-| `main`    | Production | Deploy automático em produção          |
-| `staging` | Preview    | Deploy automático em URL de preview    |
+| Branch    | Ambiente   | URL principal                                              |
+|-----------|------------|------------------------------------------------------------|
+| `main`    | Production | https://vitrine-digital-omega.vercel.app                   |
+| `staging` | Preview    | https://vitrine-digital-git-staging-vdveiculos.vercel.app  |
+
+Repositório: https://github.com/RodoxCB/vitrine-digital
 
 Fluxo recomendado:
 
 1. Desenvolver e testar em `staging`
 2. Validar o preview gerado pela Vercel
 3. Fazer merge em `main` para publicar em produção
+
+Cada push dispara deploy automaticamente via integração Vercel + GitHub.
 
 ## Desenvolvimento local
 
